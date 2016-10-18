@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+  background-image: url(img/main-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+img{
+  -webkit-tranform:rotate(90deg);
+
+}
+
+span{
+  color:white;
+  font-family: helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p{
+  color:white;
+  font-family: helvetica;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+span{
+  color:white;
+  margin: 0;
+  font-size: 35px;
+}
+
+header{
+  color: white;
+  width: 100%;
+  height: 10vh;
+  border: 1px;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+
+}
+
+.header-btn{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+main{
+  width: 100%;
+  height: 70vh;
+  border: 1px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  width: 100%;
+  height: 20vh;
+  border: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  height:40px;
+  width: 40px;
+  border-radius: 100px;
+  background-color: white;
+  padding: 10px;
+  background-image: url("img/11949946211230256684line_line_arrow_end.svg.hi.png");
+  background-repeat: no-repeat;
+  background-size: 33px;
+  background-position: center;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 600px) {
+/*for mobile*/
+  .header-btn{
+    display: none;
+  }
+
+  .ham-btn {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 2px solid white;
+    border-radius: 100px;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+  }
+
+  #hamburger {
+    height: 60px;
+    width: 60px;
+    background-image: url(img/hamburger.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .social-media{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10px;
+    left: 190px;
+  }
+
+  #twitter{
+    height: 23px;
+    width: 23px;
+    background-image: url(img/twitter-xxl.png);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+  }
+
+  #facebook{
+    height: 23px;
+    width: 23px;
+    background-image: url(img/facebook-logo-png-white-i6.png);
+    background-size: 23px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 600px) {
+  .mobile-header{
+    display: none;
+  }
+  .social-media{
+    display: none;
+  }
+
+  .ham-btn{
+    display: none;
+  }
+}
